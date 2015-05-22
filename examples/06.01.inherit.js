@@ -11,3 +11,8 @@ function inherit(p) {	// p必须是一个对象
 }
 // 最早提出原型继承的人：
 // http://javascript.crockford.com/prototypal.html
+
+var a = {x:1, y:2};
+var b = inherit(a);
+console.log(b.x);	// 1
+console.log(b.y);	// 2
