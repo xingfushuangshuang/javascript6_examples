@@ -47,8 +47,8 @@ function subtract(o, p) {
 }
 
 /*
- * Return a new object that holds the properties of both o and p.
- * If o and p have properties by the same name, the values from o are used.
+ * 计算两个对象的并集
+ * 
  */
 function union(o,p) { return extend(extend({},o), p); }
 
