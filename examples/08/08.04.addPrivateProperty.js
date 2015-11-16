@@ -12,6 +12,7 @@
 // This means that the value is private to the two accessor methods, and it 
 // cannot be set or modified except through the setter method.
 function addPrivateProperty(o, name, predicate) {
+    // setter和getter两个闭包，共享一个变量
     var value;  // This is the property value
 
     // The getter method simply returns the value.
